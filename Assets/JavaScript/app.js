@@ -50,7 +50,7 @@ $(document).ready(function() {
 	$('.splashSide.left').on('click', function() {		//PROFESSIONAL SPLASH click
 		$('.miniNav').addClass('col-sm-offset-4');			//offset so navbar is positioned properly
 		standardToggle();									//toggle nav / splash nav
-		showElement('.miniNavProf');		//show breadcrumb prof && big navs
+		showElement('.miniNavProf');						//show breadcrumb prof && big navs
 		showElement('.miniProf');
 		showElement('.professional');
 		standardSlide();									//animate nav
@@ -62,7 +62,7 @@ $(document).ready(function() {
 		$('.miniProf').removeClass('col-sm-offset-4');		//offset so navbar is positioned properly
 		$('.miniNav').addClass('col-sm-offset-4');			//offset so navbar is positioned properly
 		standardToggle();									//toggle nav / splash nav
-		showElement('.miniNavPerson');			//toggle breadrcumb person && big person
+		showElement('.miniNavPerson');						//toggle breadrcumb person && big person
 		showElement('.miniPerson');
 		showElement('.personal');
 		standardSlide();									//animate nav
