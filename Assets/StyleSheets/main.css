@@ -1,0 +1,246 @@
+body {
+	background-color: OldLace;
+}
+.hidden {
+	visibility: hidden;
+}
+.centerNavElement {				/*bar*/
+	height: 100px;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 0 0 15px 15px;
+}
+.miniNavProf {					/*bar*/
+	display: inline;
+	position: fixed;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 0 0 15px 15px;
+	z-index: 1;
+}
+.miniNavPerson {				/*bar*/
+	display: inline;
+	position: fixed;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 0 0 15px 15px;
+	margin-left: -38px;
+	z-index: 1;
+}
+	.miniPortrait {				/*center button portrait*/
+		height: 80px;
+		width: 80px;
+		border-radius: 40px;
+		border: 1px solid black;
+		background-color: grey;
+		position: fixed;
+		margin-left: 10.7%;
+		margin-top: 10px;
+		z-index: 3;
+	}
+	.miniSide.left {			/*center button professional*/
+		margin-top: 10px;
+		margin-left: 150px;
+		position: fixed;
+		z-index: 2;
+	}
+	.miniSide.right {			/*center button personal*/
+		margin-top: 10px;
+		margin-left: 170px;
+		position: fixed;
+		z-index: 2;
+	}
+		.miniProf {				/*breadcrumbs*/
+			height: 34px;
+			width: 34px;
+			border-radius: 17px;
+			float: right;
+			margin: 3px;
+			margin-left: -60px;
+		}
+			.pr1 img, .pr2 img, .pr3 img, .pr4 img, .pr5 img, .pe1 img, .pe2 img, .pe3 img {
+				margin-left: -15px;
+			}
+		
+		.miniPerson {			/*breadcrumbs*/
+			height: 30px;
+			width: 30px;
+			border-radius: 15px;
+			float: left;
+			margin: 5px;
+			margin-left: -100px;
+		}
+
+	.miniSide {
+		height: 50px;
+		width: 50px;
+		border-radius: 25px;
+		border: 1px solid black;
+		background-color: pink;
+		position: fixed;
+		margin-top: 10px;
+		z-index: 1;
+
+	}
+
+.splashNav {
+	margin-top: 175px;
+}
+
+	.splashPort {
+		height: 200px;
+		width: 200px;
+		border-radius: 100px;
+		border: 3px solid black;
+		background-color: grey;
+		position: fixed;
+		margin-left: 37%;
+	}
+
+	.splashSide {
+		height: 150px;
+		width: 150px;
+		border-radius: 75px;
+		border: 3px solid black;
+		background-color: pink;
+		position: fixed;
+	}
+		.splashSide.left {
+			margin-left: 3%;
+		}
+
+		.splashSide.right {
+			margin-left: 72%;
+		}
+.professional {						/*big nav buttons*/
+	margin-left: 10.5%;
+	margin-top: 100px;
+	z-index: 2;
+}
+	.professional .prof h1 {
+		margin-top: 150px;
+	}
+	.pr1 h1 {
+		margin-left: -15px;
+	}
+	.pr3 h1 {
+		margin-left: -11px;
+	}
+	.pr4 h1 {
+		margin-left: -10px;
+	}
+	.pr5 h1 {
+		margin-left: -22px;
+	}
+	.prof {
+		height: 150px;
+		width: 150px;
+		border-radius: 75px;
+		border: 3px solid black;
+		background-color: AliceBlue;
+		margin: 15px;
+	}
+.personal {						/*big nav buttons*/
+	margin-left: 26.2%;
+	margin-top: 100px;
+	z-index: 2;
+}
+	.personal .person h1 {
+		margin-top: 150px;
+	}
+	.pe1 h1 {
+		margin-left: 30px;
+	}
+	.pe2 h1 {
+		margin-left: -13px;
+	}
+	.pe3 h1 {
+		margin-left: 33px;
+	}
+	.person {
+		height: 150px;
+		width: 150px;
+		border-radius: 75px;
+		border: 3px solid black;
+		margin: 15px;
+		background-color: LavenderBlush;
+	}
+
+.infoWindow {
+	background-color: white;
+	height: 1000px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	bottom: 10px;
+	border: 3px solid black;
+	border-radius: 75px;
+}
+
+	.projectWindow {
+		height: 375px;
+		margin: 20px;
+		border: 3px solid black;
+		border-radius: 7px;
+		background-color: grey;
+	}
+
+		#project1 {
+			margin-left: 71px;
+			background-image: url(../../Assets/Images/Projects_TTT.png);
+		}
+		#project2 {
+			background-image: url(../../Assets/Images/Projects_DragRace.png);
+		}
+		#project3 {
+			background-image: url(../../Assets/Images/Projects_Website.png)
+		}
+		 #project4 {
+		 	margin-left: 71px;
+		 }
+
+	.artWindow {
+		height: 460px;
+		margin: 20px;
+		border: 3px solid black;
+		border-radius: 7px;
+	}
+		#art1 {
+			margin-left: 58px;
+			background-image: url(../../Assets/Images/Art_Painting.png);
+		}
+		#art2 {
+			margin-left: 71px;
+			background-image: url(../../Assets/Images/Art_Print.png);
+		}
+		#art3 {
+			margin-left: 71px;
+			background-image: url(../../Assets/Images/Art_Photography.png);
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
