@@ -8,16 +8,15 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">			<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">		<!-- Optional theme -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>						<!-- Latest compiled and minified JavaScript -->
-	<link rel="stylesheet" href=".././Assets/StyleSheets/animate.css/animate.min.css">							<!-- Animations -->
-
-	<link rel="stylesheet" href=".././Assets/StyleSheets/main.css">
-	<script src=".././Assets/JavaScript/app.js"></script>
+	
+	<link rel="stylesheet" href=".././Assets/StyleSheets/animate.css/animate.min.css">					<!-- Animations CSS library -->
+	<link rel="stylesheet" href=".././Assets/StyleSheets/main.css">										<!-- main CSS -->
+	<script src=".././Assets/JavaScript/app.js"></script>												<!-- primary JS page -->
 
 </head>
 <body>
 	<div class='container'>
 		<div class='row navBar'>
-
 			<div class="col-md-4 miniNavProf hidden">
 				<div class="col-xs-2 col-xs-offset-2 miniProf pr1"><img src=".././Assets/Images/linkedin_circle_small.png"></div>
 				<div class="col-xs-2 miniProf pr2"><img src=".././Assets/Images/github_logo_small.png"></div>
@@ -30,15 +29,15 @@
 					<span title="Professional"><div class="col-sm-3 miniSide left" id="professionalNav"></div></span>
 					<span title="Home"><div class="col-sm-3 miniPortrait"></div></span>
 					<span title="Personal"><div class="col-sm-3 miniSide right" id="personalNav"></div></span>
-				</div>									<!-- end navBar center Nav pearls-->
+				</div>								<!-- end navBar center Nav pearls-->
 			</div>
 			<div class="col-md-4 miniNavPerson hidden">
 				<div class="col-xs-2 miniPerson pe1"><img src=".././Assets/Images/bio_small.png"></div>
 				<div class="col-xs-2 miniPerson pe2"><img src=".././Assets/Images/interests_small.png"></div>
 				<div class="col-xs-2 miniPerson pe3"><img src=".././Assets/Images/art_small.png"></div>
 			</div>									<!-- end navBar Personal pearls-->
-
 		</div>										<!-- end navBar row-->
+
 
 		<div class='row'>							<!--Splash Page-->
 			<div class="col-lg-12 splashNav">
@@ -48,6 +47,7 @@
 			</div>
 		</div>										<!-- end big splash pearls-->
 
+
 		<div class='row professional hidden'>
 			<span title="LinkedIn"><div class="col-md-2 prof pr1"><h1>LinkedIn</h1></div></span>
 			<span title="GitHub"><div class="col-md-2 prof pr2"><h1>GitHub</h1></div></span>
@@ -55,12 +55,17 @@
 			<span title="Resume"><div class="col-md-2 prof pr4"><h1>Resume</h1></div></span>
 			<span title="Education"><div class="col-md-2 prof pr5"><h1>Education</h1></div></span>
 		</div>										<!-- end professional pearls-->
-
 		<div class="row personal hidden">
 			<span title="Bio"><div class="col-md-4 person pe1"><h1>Bio</h1></div></span>
 			<span title="Interests"><div class="col-md-4 person pe2"><h1>Interests</h1></div></span>
 			<span title="Art"><div class="col-md-4 person pe3"><h1>Art</h1></div></span>
 		</div>										<!-- end personal pearls-->
+
+
+
+<!-- infoWindow -->
+
+
 
 		<div class="row infoWindow hidden">
 			<div class="col-lg-10 col-xs-offset-1">
@@ -120,7 +125,8 @@
 					</div>
 
 
-					<div class="hidden" id="windowProjects">
+					<div class="hidden" id="windowProjects" style="overflow-y: scroll; overflow-X: hidden; height: 700px">
+
 						<h1>Projects</h1>
 						<p>
 							I am still in the early phases of my programming career, and my projects are, thus far, entirely student projects.
@@ -129,19 +135,24 @@
 						<p>
 							We have focused on javascript, JSON, HTML and CSS to create several projects. While the class has given parameters surrounding the minimum necessary elements to include, I want to continue to refine and improve on them as long as it is worth while and interesting.
 						</p>
+						<br>
+						<p>
+							Here is another paragraph. I think I should include some more text to make this work... I don't understand it, but its a possibility.
+						</p>
 
 						<div class="row">
 							<div class="col-xs-3 projectWindow" id="project1"></div>
-							<div class="col-xs-3 projectWindow" id="project2"></div>
-							<div class="col-xs-3 projectWindow" id="project3"></div>
+							<div class="col-sm-7 projectDescriptionWindow">Here is a description of some project.</div>
 						</div>
-
-	<!--		<div class="row">					SomeDay there'll be more projects.
-					<div class="col-xs-3 projectWindow" id="project4"></div>
-					<div class="col-xs-3 projectWindow" id="project5"></div>
-					<div class="col-xs-3 projectWindow" id="project6"></div>
-				</div> -->
-			</div>
+						<div class="row">
+							<div class="col-xs-3 projectWindow" id="project2"></div>
+							<div class="col-sm-7 projectDescriptionWindow">Here is a description of some project.</div>
+						</div>
+						<div class="rwo">
+							<div class="col-xs-3 projectWindow" id="project3"></div>
+							<div class="col-sm-7 projectDescriptionWindow">Here is a description of some project.</div>
+						</div>
+					</div>
 
 
 			<div class="hidden" id="windowGit">
@@ -157,7 +168,7 @@
 
 
 			<div class="hidden" id="windowLinked">
-				<a href="www.linkedin.com/in/EDLyonhart"><h1>LinkedIn Account</h1></a>
+				<a href="https://www.linkedin.com/in/EDLyonhart"><h1>LinkedIn Account</h1></a>
 				<p>
 					Here's my LinkedIn account. My mooney-eyed, optimistic LinkedIn account.
 				</p>
@@ -230,7 +241,10 @@
 				</div>
 			</div>
 		</div>
-	</div>											<!-- end of ALL OF BOOTSTRAPS!!! -->
+	
+
+
+	</div>		<!-- end of ALL OF BOOTSTRAPS!!! -->
 
 </body>
 </html>
