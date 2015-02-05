@@ -50,9 +50,7 @@ $(document).ready(function() {
 	$('.splashSide.left').on('click', function() {		//PROFESSIONAL SPLASH click
 		$('.miniNav').addClass('col-sm-offset-4');			//offset so navbar is positioned properly
 		standardToggle();									//toggle nav / splash nav
-		showElement('.miniNavProf');						//show breadcrumb prof && big navs
-		showElement('.miniProf');
-		showElement('.professional');
+		showElement('.miniNavProf, .professional, .miniProf');						//show breadcrumb prof && big navs
 		standardSlide();									//animate nav
 		profSlide();										//slide breadcrumb prof
 		personSlideBack();									//reset Person side	
@@ -62,9 +60,7 @@ $(document).ready(function() {
 		$('.miniProf').removeClass('col-sm-offset-4');		//offset so navbar is positioned properly
 		$('.miniNav').addClass('col-sm-offset-4');			//offset so navbar is positioned properly
 		standardToggle();									//toggle nav / splash nav
-		showElement('.miniNavPerson');						//toggle breadrcumb person && big person
-		showElement('.miniPerson');
-		showElement('.personal');
+		showElement('.miniNavPerson, .miniPerson, .personal');						//toggle breadrcumb person && big person
 		standardSlide();									//animate nav
 		personSlide();										//slide breadcrumb person
 		profSlideBack();									//reset Prof side
@@ -73,40 +69,23 @@ $(document).ready(function() {
 	$('.miniPortrait').on('click', function () {		//miniportrait click
 		standardToggle();									//display center nav
 		standardSlideBack();								//slide back center nav
-		hideElement('.infoWindow');
-		hideElement('.miniNav');
-		hideElement('.miniNavProf');
-		hideElement('.miniProf');
-		hideElement('.miniNavPerson');
-		hideElement('.miniPerson');
-		hideElement('.professional');
-		hideElement('.personal');
+		hideElement('.infoWindow, .miniNav, .miniNavProf, .miniProf, .miniNavPerson, .miniPerson, .professional, .personal');
 		$('.miniNav').removeClass('col-sm-offset-4');
 		personSlideBack();
 		profSlideBack();
 	});
 
 	 $('#professionalNav').on('click', function () {		//click on PROFESSIONAL NAV BUTTON
-		hideElement('.infoWindow');
-		hideElement('.personal');
-		hideElement('.miniNavPerson');
-		hideElement('.miniPerson');
-		showElement('.professional');
-		showElement('.miniNavProf');
-		showElement('.miniProf');
+		hideElement('.infoWindow, .personal, .miniNavPerson, .miniPerson');
+		showElement('.professional, .miniNavProf, .miniProf');
 		profSlide();
 		personSlideBack();
 	});
 
 	$('#personalNav').on('click', function () {			//click on PERSONAL NAV
 		//$('.miniNav').addClass('col-sm-offset-4');
-		hideElement('.infoWindow');
-		hideElement('.professional');
-		hideElement('.miniNavProf');
-		hideElement('.miniProf');
-		showElement('.personal');
-		showElement('.miniNavPerson');
-		showElement('.miniPerson');
+		hideElement('.infoWindow, .professional, .miniNavProf, .miniProf');
+		showElement('.personal, .miniNavPerson, .miniPerson');
 		personSlide();
 		profSlideBack();
 	});
@@ -115,49 +94,48 @@ $(document).ready(function() {
 		$('#windowLinked, #windowGit, #windowProjects, #windowResume, #windowEducation, #windowBio, #windowInterests, #windowArt').addClass('hidden');
 		$('.infoWindow').css('height', '1000px');
 	};
+	
+		$('.pr1').on('click', function() {				//LinkedIn
+			clearInfoWindow();
+			$('.infoWindow, #windowLinked').removeClass('hidden');
+			$('.infoWindow').css('height', '200px');
+		});
+		$('.pr2').on('click', function() {				//GitHub
+			clearInfoWindow();
+			$('.infoWindow, #windowGit').removeClass('hidden');
+			$('.infoWindow').css('height', '200px');
+		});
+		$('.pr3').on('click', function() {				//Projects
+			clearInfoWindow();
+			$('.infoWindow, #windowProjects').removeClass('hidden');
+			$('.infoWindow').css('height', '650px');
+		});
+		$('.pr4').on('click', function() {				//Resume
+			clearInfoWindow();
+			$('.infoWindow, #windowResume').removeClass('hidden');
+			$('.infoWindow').css('height', '600px');
+		});
+		$('.pr5').on('click', function() {				//Education
+			clearInfoWindow();
+			$('.infoWindow, #windowEducation').removeClass('hidden');
+			$('.infoWindow').css('height', '950px');
+		});
 
-	$('.pr1').on('click', function() {		//LinkedIn
-		clearInfoWindow();
-		$('.infoWindow, #windowLinked').removeClass('hidden');
-		$('.infoWindow').css('height', '200px');
-	});
-	$('.pr2').on('click', function() {		//GitHub
-		clearInfoWindow();
-		$('.infoWindow, #windowGit').removeClass('hidden');
-		$('.infoWindow').css('height', '200px');
-	});
-	$('.pr3').on('click', function() {		//Projects
-		clearInfoWindow();
-		$('.infoWindow, #windowProjects').removeClass('hidden');
-		$('.infoWindow').css('height', '650px');
-	});
-	$('.pr4').on('click', function() {		//Resume
-		clearInfoWindow();
-		$('.infoWindow, #windowResume').removeClass('hidden');
-		$('.infoWindow').css('height', '600px');
-	});
-	$('.pr5').on('click', function() {		//Education
-		clearInfoWindow();
-		$('.infoWindow, #windowEducation').removeClass('hidden');
-		$('.infoWindow').css('height', '950px');
-	});
-
-	$('.pe1').on('click', function() {		//Bio
-		clearInfoWindow();
-		$('.infoWindow, #windowBio').removeClass('hidden');
-		$('.infoWindow').css('height', '600px');
-	});
-	$('.pe2').on('click', function() {		//Interests
-		clearInfoWindow();
-		$('.infoWindow, #windowInterests').removeClass('hidden');
-		$('.infoWindow').css('height', '475px');
-	});
-	$('.pe3').on('click', function() {		//Art
-		clearInfoWindow();
-		$('.infoWindow, #windowArt').removeClass('hidden');
-		$('.infoWindow').css('height', '775px');
-	});
-
+		$('.pe1').on('click', function() {				//Bio
+			clearInfoWindow();
+			$('.infoWindow, #windowBio').removeClass('hidden');
+			$('.infoWindow').css('height', '600px');
+		});
+		$('.pe2').on('click', function() {				//Interests
+			clearInfoWindow();
+			$('.infoWindow, #windowInterests').removeClass('hidden');
+			$('.infoWindow').css('height', '475px');
+		});
+		$('.pe3').on('click', function() {				//Art
+			clearInfoWindow();
+			$('.infoWindow, #windowArt').removeClass('hidden');
+			$('.infoWindow').css('height', '775px');
+		});
 });
 
 
