@@ -1,11 +1,10 @@
 body {
 	background-color: OldLace;
 }
-img {
+img, .item {
 	height: 600px;
 	width: 600px;
-	margin-left: auto;
-	margin-right: auto
+	margin: auto;
 }
 .carousel-inner {
 	margin-top: 50px;
@@ -14,6 +13,5 @@ img {
 .item {
 	height: 600px;
 	width: 600px;
-	margin-left: auto;
-	margin-right: auto
+	margin: auto;
 }

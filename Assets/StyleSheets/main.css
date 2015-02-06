@@ -1,5 +1,6 @@
 body {
 	background-color: OldLace;
+	background-image: url(../../Assets/Images/Background.jpg);
 }
 .hidden {
 	visibility: hidden;
@@ -12,6 +13,7 @@ body {
 	border-radius: 0 0 15px 15px;
 	position: fixed;
 	width: 358px;
+	opacity: .8;
 	z-index: 1;
 }
 .miniNavProf {					/*bar*/
@@ -20,6 +22,7 @@ body {
 	background-color: white;
 	border: 2px solid black;
 	border-radius: 0 0 15px 15px;
+	opacity: .8;
 	z-index: 2;
 }
 .miniNavPerson {				/*bar*/
@@ -29,6 +32,7 @@ body {
 	border: 2px solid black;
 	border-radius: 0 0 15px 15px;
 	margin-left: -38px;
+	opacity: .8;
 	z-index: 2;
 }
 	.miniPortrait {				/*center button portrait*/
@@ -36,7 +40,7 @@ body {
 		width: 80px;
 		border-radius: 40px;
 		border: 1px solid black;
-		background-color: grey;
+		background-color: RosyBrown;
 		position: fixed;
 		margin-left: 10.7%;
 		margin-top: 10px;
@@ -96,7 +100,7 @@ body {
 		width: 200px;
 		border-radius: 100px;
 		border: 3px solid black;
-		background-color: grey;
+		background-color: RosyBrown;
 		position: fixed;
 		margin-left: 37%;
 	}
@@ -119,10 +123,12 @@ body {
 .professional {						/*big nav buttons*/
 	margin-left: 10.5%;
 	margin-top: 100px;
+	opacity: .8;
 	z-index: 2;
 }
 	.professional .prof h1 {
 		margin-top: 150px;
+		color: white;
 	}
 	.pr1 h1 {
 		margin-left: -15px;
@@ -147,10 +153,12 @@ body {
 .personal {						/*big nav buttons*/
 	margin-left: 26.2%;
 	margin-top: 100px;
+	opacity: .8;
 	z-index: 2;
 }
 	.personal .person h1 {
 		margin-top: 150px;
+		color: white;
 	}
 	.pe1 h1 {
 		margin-left: 30px;
@@ -181,6 +189,7 @@ body {
 	border: 3px solid black;
 	border-radius: 75px;
 	overflow: hidden;
+	opacity: .9;
 }
 
 	.projectWindow, .projectDescriptionWindow {
@@ -188,6 +197,7 @@ body {
 		margin: 20px;
 		border: 3px solid black;
 		border-radius: 7px;
+		opacity: 1;
 	}
 
 		#project1 {
@@ -215,21 +225,26 @@ body {
 		margin: 20px;
 		border: 3px solid black;
 		border-radius: 7px;
+		opacity: 1;
 	}
 		#art1 {
 			margin-left: 50px;
 			background-image: url(../../Assets/Images/Art_Painting.png);
+			opacity: 1;
 		}
 		#art2 {
 			margin-left: 50px;
 			background-image: url(../../Assets/Images/Art_Print.png);
+			opacity: 1;
 		}
 		#art3 {
 			margin-left: 50px;
 			background-image: url(../../Assets/Images/Art_Photography.png);
+			opacity: 1;
 		}
 		.artDescriptionWindow {
 			height: 470px;
 			border: 3px solid black;
 			border-radius: 7px;	
+			opacity: 1;
 		}
